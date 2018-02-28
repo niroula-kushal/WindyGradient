@@ -1,0 +1,39 @@
+<div class="gentle-wind">
+	<h3>I am the leaf in the wind</h3>
+</div>
+
+<style>
+	.gentle-wind
+	{
+		height: 100vh;
+		width: 100%;
+		position: relative;
+		background-image: linear-gradient(75deg, red,green,yellow, orange, #45aa43, lime, limegreen, purple, lightblue, khaki);
+		background-size: 500%;
+		animation-name: gentleWind;
+		animation-duration: 20s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+	.gentle-wind h3
+	{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: white;
+		font-size: 3em;
+		text-shadow: 4px 4px 4px black, -2px -2px 2px black;
+	}
+	@keyframes gentleWind
+	{
+		0%
+		{
+			background-position: 0%;
+		}
+		100%
+		{
+			background-position: 100%;
+		}
+	}
+</style>
